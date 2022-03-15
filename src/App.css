@@ -146,7 +146,7 @@ z-index: 20;
 
 /* ------------HERO------------ */
 .hero-image {
-  height: 100%;
+  height: 90%;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -189,4 +189,35 @@ z-index: 20;
 
 .hero-text-header{
   font-size: 8rem;
+}
+
+/* -----------GALLERY----------- */
+
+.tiles {
+  padding: 6vh 16vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.tile {
+  margin: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 18vw;
+  height: 18vw;
+
+  
+}
+
+.tile img {
+  width: 100%;
+  transition: transform 500ms ease;
+  /* border: red 2px solid; */
+}
+
+.tile img:hover {
+  transform: scale(1.1);
 }
