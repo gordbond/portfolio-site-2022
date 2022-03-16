@@ -10,7 +10,6 @@ export function Old() {
 
     return (
         <div className="main-container">
-            <h1>OLD</h1>
             <Tiles data={data} />
         </div>
     );

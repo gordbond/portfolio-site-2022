@@ -33,37 +33,51 @@ export function Tile({data}) {
 		let tileStyle = {};
 		let headerStyle = {};
 		let zoom = {};
-		// When tile clicked
-		if (open) {
-			tileStyle = {
-				width: '62vw',
-				height: '62vw',
-				position: 'absolute',
-				top: '50%',
-				left: '50%',
-				margin: '0',
-				marginTop: '-31vw',
-				marginLeft: '-31vw',
-				boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
-				transform: 'none'
-			};
-		} else {
-			tileStyle = {
-				width: '18vw',
-				height: '18vw'
-			};
-		}
+        if (open) {
+            tileStyle = {
+                width: '62vw',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                margin: '0',
+                marginTop: '-31vw',
+                marginLeft: '-31vw',
+                boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
+                transform: 'none',
+            };
+        } else {
+            tileStyle = {
+                width: '18vw',
+                height: '18vw',
+                backgroundImage: `url("${data.image}")`,
+            };
+        }
 
 		return (
 			<div className="tile">
-				<img
-					onMouseEnter={toggleMouseOver}
-					onMouseLeave={toggleMouseOver}
-					onClick={clickHandler}
-					src={data.image}
-					alt={data.name}
-					style={tileStyle}
-				/>
+                {open ?
+                <div className="tile-img-container">
+                    <img
+                        onMouseEnter={toggleMouseOver}
+                        onMouseLeave={toggleMouseOver}
+                        onClick={clickHandler}
+                        src={data.image}
+                        alt={data.name}
+                        style={tileStyle}
+                    />
+                </div>
+                :
+                <div className="tile-container">
+                    <div 
+                        className="sq-tile" 
+                        style={tileStyle}
+                        onMouseEnter={toggleMouseOver}
+                        onMouseLeave={toggleMouseOver}
+                        onClick={clickHandler}
+                        >
+                    </div> 
+                </div>
+                }
 			</div>
 		);
         
