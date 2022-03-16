@@ -242,6 +242,17 @@ z-index: 20;
     display: inline-flex;
 }
 
+.overlay{
+  width: 100vw;
+  height: 1200px;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  background-color: #eeedeb;
+  left: 0;
+  opacity: 1;
+}
+
 /* .sq-tile{
     height: 100%;
     width: 100%;

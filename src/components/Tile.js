@@ -3,19 +3,6 @@ import React, { useEffect, useState } from 'react';
 
 export function Tile({data}) {
 
-	// constructor(props) {
-	// 		super(props);
-	// 		this.state = {
-	// 			open: false,
-	// 			mouseOver: false
-	// 		};
-	// 		// Bind properties to class instance
-	// 		this._clickHandler = this._clickHandler.bind(this);
-	// 		this._mouseEnter = this._mouseEnter.bind(this);
-	// 		this._mouseLeave = this._mouseLeave.bind(this);
-	// 	}
-	// 	// Event handlers to modify state values
-
 	const toggleMouseOver = (e) => {
 		e.preventDefault();
         setMouseOver(v=>!v);
@@ -44,6 +31,7 @@ export function Tile({data}) {
                 marginLeft: '-31vw',
                 boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
                 transform: 'none',
+                zIndex: '100'
             };
         } else {
             tileStyle = {
@@ -56,7 +44,9 @@ export function Tile({data}) {
 		return (
 			<div className="tile">
                 {open ?
-                <div className="tile-img-container">
+                <>
+                <div className="overlay"></div>
+                <div className="tile-img-container">  
                     <img
                         onMouseEnter={toggleMouseOver}
                         onMouseLeave={toggleMouseOver}
@@ -66,6 +56,7 @@ export function Tile({data}) {
                         style={tileStyle}
                     />
                 </div>
+                </>
                 :
                 <div className="tile-container">
                     <div 
