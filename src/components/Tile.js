@@ -23,12 +23,8 @@ export function Tile({data}) {
         if (open) {
             tileStyle = {
                 width: '62vw',
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                margin: '0',
-                marginTop: '-31vw',
-                marginLeft: '-31vw',
+                display: 'block',
+                margin: '30px auto',
                 boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
                 transform: 'none',
                 zIndex: '100'
@@ -45,17 +41,24 @@ export function Tile({data}) {
 			<div className="tile">
                 {open ?
                 <>
-                <div className="overlay"></div>
-                <div className="tile-img-container">  
-                    <img
-                        onMouseEnter={toggleMouseOver}
-                        onMouseLeave={toggleMouseOver}
-                        onClick={clickHandler}
-                        src={data.image}
-                        alt={data.name}
-                        style={tileStyle}
-                    />
+                <div className="overlay">
+                    <div className="tile-img-container">  
+                        <img
+                            onMouseEnter={toggleMouseOver}
+                            onMouseLeave={toggleMouseOver}
+                            onClick={clickHandler}
+                            src={data.image}
+                            alt={data.name}
+                            style={tileStyle}
+                        />
+                        
+                    </div>
+                    <div className="caption">
+                        <p>{data.name}</p>
+                    </div>
                 </div>
+                
+                
                 </>
                 :
                 <div className="tile-container">
