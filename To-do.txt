@@ -1,0 +1,16 @@
+TODO:
+- Add all the photos I want to use to the S3 bucket
+    - Brick series - Just done (Take photo of the wall one)
+    - LA paintings - Either I have them or I don't
+    - Trying not to die (MFA Thesis show) - RESHOOT
+    - Approximate people  (I hope I hasve these)
+    - Random other good ones
+    - New stuff
+- Add side menu for all the different painting series
+- Create new page with "Sold stickers"
+- Add a link to download a price list
+- Add an about page with bio and a C/V download and photo of me
+- Add link to my instagram
+- Remove the "App" and "Next" - Or at least add a note saying coming soon
+- Make sure everything looks good for all browser sizes
+- Make the site mobile friendly

@@ -8,8 +8,8 @@ import React, { useEffect, useState } from 'react';
 export function Hero() {
 
     return (
-        <div class="hero-image">
-            <div class="hero-text">
+        <div className="hero-image">
+            <div className="hero-text">
                 <h1>I am John Doe</h1>
                 <p>And I'm a Photographer</p>
             </div>

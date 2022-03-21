@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 
-export function Tile({data}) {
+export function Tile({data, menuVisible, setMenuVisible}) {
 
 	const toggleMouseOver = (e) => {
 		e.preventDefault();
@@ -13,6 +13,7 @@ export function Tile({data}) {
 	const clickHandler = (e) => {
 		e.preventDefault();
         setOpen(v => !v);
+        setMenuVisible(v => !v);
 	}
 
 
