@@ -257,6 +257,11 @@ z-index: 20;
   display: flex;
 }
 
+.top-container-new{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .side-menu{
   width: 300px;
   padding: 0 15px;
@@ -316,4 +321,9 @@ z-index: 20;
   border-radius: 50%;
   height: 10px;
   width: 10px;
+}
+
+.btn-container{
+  width: 100%;
+  text-align: center;
 }

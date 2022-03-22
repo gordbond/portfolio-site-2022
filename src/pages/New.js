@@ -10,10 +10,13 @@ import data from "../Data";
 export function New() {
 
     const [menuVisible, setMenuVisible] = useState(true);
+    const handlePaintingListbtn = () => {
+        console.log("Download painting list")
+    }
 
     return (
         
-        <div className="top-container">
+        <div className="top-container-new">
             <div className="main-container">
                 <Tiles 
                     data={data[0].imgs} 
@@ -22,6 +25,12 @@ export function New() {
                     newPage={true}
                 />
             </div>
+            {menuVisible &&
+            <div className="btn-container">
+                <button className="cv-btn" onClick={handlePaintingListbtn}>Download Painting List</button>
+            </div>
+            }
+            
         </div>
     );
 }
