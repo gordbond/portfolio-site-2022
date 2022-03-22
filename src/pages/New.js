@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Tiles from "../components/Tiles"
+import data from "../Data";
 
 /**
  * Home page
@@ -7,9 +9,18 @@ import React, { useEffect, useState } from 'react';
  */
 export function New() {
 
+    const [menuVisible, setMenuVisible] = useState(true);
+
     return (
-        <div className="main-container">
-            <h1>NEW</h1>
+        
+        <div className="top-container">
+            <div className="main-container">
+                <Tiles 
+                    data={data[0].imgs} 
+                    menuVisible={menuVisible} 
+                    setMenuVisible={setMenuVisible}
+                />
+            </div>
         </div>
     );
 }

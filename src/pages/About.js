@@ -8,6 +8,10 @@ import Profile from '../assets/profile-sitting.jpg';
  */
 export function About() {
 
+    const handleCVbtn = () => {
+        console.log("Download cv")
+    }
+
     return (
         <div className="main-container">
             <div className="bio-container">
@@ -53,7 +57,7 @@ export function About() {
                 </div>
             </div>
             <br/>
-            <button className="cv-btn">Download C/V</button>
+            <button className="cv-btn" onClick={handleCVbtn}>Download C/V</button>
             </div>
 
         </div>
