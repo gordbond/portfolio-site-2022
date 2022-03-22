@@ -27,7 +27,7 @@ export function New() {
             </div>
             {menuVisible &&
             <div className="btn-container">
-                <button className="cv-btn" onClick={handlePaintingListbtn}>Download Painting List</button>
+                <button className="cv-btn" onClick={handlePaintingListbtn}>Download Price List</button>
             </div>
             }
             
