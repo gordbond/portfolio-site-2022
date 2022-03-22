@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Tile from '../components/Tile'
 
-export function Tiles({data, menuVisible, setMenuVisible}) {
+export function Tiles({data, menuVisible, setMenuVisible, newPage=false}) {
 
 return (
             
@@ -11,7 +11,9 @@ return (
 					key={data.id} 
 					data={data} 
 					menuVisible={menuVisible} 
-					setMenuVisible={setMenuVisible}/>
+					setMenuVisible={setMenuVisible}
+					newPage={newPage}	
+					/>
 				})}
 			</div>
         );

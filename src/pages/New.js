@@ -19,6 +19,7 @@ export function New() {
                     data={data[0].imgs} 
                     menuVisible={menuVisible} 
                     setMenuVisible={setMenuVisible}
+                    newPage={true}
                 />
             </div>
         </div>

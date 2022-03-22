@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 
-export function Tile({data, menuVisible, setMenuVisible}) {
+export function Tile({data, menuVisible, setMenuVisible, newPage=false}) {
 
 	const toggleMouseOver = (e) => {
 		e.preventDefault();
@@ -15,6 +15,8 @@ export function Tile({data, menuVisible, setMenuVisible}) {
         setOpen(v => !v);
         setMenuVisible(v => !v);
 	}
+
+    useEffect(() => {console.log("NEW PAGE: ", newPage)},[])
 
 
 		// Modify styles based on state values
@@ -69,7 +71,7 @@ export function Tile({data, menuVisible, setMenuVisible}) {
                         onClick={clickHandler}
                         >
                     </div>
-                    { data.sold &&
+                    { data.sold && newPage &&
                         <div className="sold-sticker"></div> 
                     }
                 </div>

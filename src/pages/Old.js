@@ -43,7 +43,9 @@ export function Old() {
                 <Tiles 
                     data={selectedSeries.imgs} 
                     menuVisible={menuVisible} 
-                    setMenuVisible={setMenuVisible}/>
+                    setMenuVisible={setMenuVisible}
+                    />
+                    
             </div>
         </div>
     );
