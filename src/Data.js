@@ -6,29 +6,35 @@ const data = [
         {
             id: 1,
             name: "Brickhead",
-            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/brickhead_2.jpg"
+            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/brickhead_2.jpg",
+            sold: true
         }, 
         {
             id: 2,
             name: "Head just sitting on a rug",
-            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/drowning_44_52.jpg"
+            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/drowning_44_52.jpg",
+            sold: true
         }, {
             id: 3,
             name: "Listen Here",
-            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/head_rug_36_48.jpg"
+            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/head_rug_36_48.jpg",
+            sold: true
         }, {
             id: 4,
             name: "Noodle Guts",
-            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/noodle_guts_44_52.jpg"
+            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/noodle_guts_44_52.jpg",
+            sold: false
         }, {
             id: 5,
             name: "A punch to the face",
-            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/punch_to_the_face_52_44.jpg"
+            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/punch_to_the_face_52_44.jpg",
+            sold: false
         }, 
         {
             id: 6,
             name: "Stubbed Toe",
-            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/stubbed_toe_56_56.jpg"
+            image: "https://gba-website-imgs.s3.amazonaws.com/brickhead/stubbed_toe_56_56.jpg",
+            sold: true
         },
         ]
     },

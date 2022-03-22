@@ -219,9 +219,9 @@ z-index: 20;
 }
 
 .tile-container {
-  display: inline-flex;
+  /* display: inline-flex; */
   margin: 0 0 10px 0;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .tile-img-container{
@@ -308,4 +308,12 @@ z-index: 20;
 
 .profile-pic-container img{
   width: 100%;
+}
+
+.sold-sticker{
+  background-color: rgb(224, 26, 26);
+  font-size: 120px;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
 }

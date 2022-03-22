@@ -19,8 +19,6 @@ export function Tile({data, menuVisible, setMenuVisible}) {
 
 		// Modify styles based on state values
 		let tileStyle = {};
-		let headerStyle = {};
-		let zoom = {};
         if (open) {
             tileStyle = {
                 width: '62vw',
@@ -70,7 +68,10 @@ export function Tile({data, menuVisible, setMenuVisible}) {
                         onMouseLeave={toggleMouseOver}
                         onClick={clickHandler}
                         >
-                    </div> 
+                    </div>
+                    { data.sold &&
+                        <div className="sold-sticker"></div> 
+                    }
                 </div>
                 }
 			</div>
