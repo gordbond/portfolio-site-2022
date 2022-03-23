@@ -44,6 +44,7 @@ export function Old() {
                     data={selectedSeries.imgs} 
                     menuVisible={menuVisible} 
                     setMenuVisible={setMenuVisible}
+                    smaller={selectedSeries.seriesName === "Approximate People" ? true : false}
                     />
                     
             </div>

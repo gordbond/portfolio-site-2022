@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 
-export function Tile({data, menuVisible, setMenuVisible, newPage=false}) {
+export function Tile({data, menuVisible, setMenuVisible, newPage=false, smaller=false}) {
 
 	const toggleMouseOver = (e) => {
 		e.preventDefault();
@@ -21,7 +21,7 @@ export function Tile({data, menuVisible, setMenuVisible, newPage=false}) {
 
 		// Modify styles based on state values
 		let tileStyle = {};
-        if (open) {
+        if (open && !smaller) {
             tileStyle = {
                 width: '62vw',
                 display: 'block',
@@ -30,7 +30,18 @@ export function Tile({data, menuVisible, setMenuVisible, newPage=false}) {
                 transform: 'none',
                 zIndex: '100'
             };
-        } else {
+        } else 
+        if (open && smaller) {
+            tileStyle = {
+                width: '50vw',
+                display: 'block',
+                margin: '30px auto',
+                boxShadow: '0 0 40px 5px rgba(0, 0, 0, 0.3)',
+                transform: 'none',
+                zIndex: '100'
+            };
+        } else
+        {
             tileStyle = {
                 width: '18vw',
                 height: '18vw',
