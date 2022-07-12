@@ -23,6 +23,7 @@ export function New() {
                     menuVisible={menuVisible} 
                     setMenuVisible={setMenuVisible}
                     newPage={true}
+                    smaller={false}
                 />
             </div>
             {menuVisible &&

@@ -7,32 +7,38 @@ const data = [
         imgs: [{
                 id: 1,
                 name: "I watered them but it was too damn sunny",
-                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/_I+watered+them+but+it+was+too+damn+sunny(3040).JPG"
+                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/_I+watered+them+but+it+was+too+damn+sunny(3040).JPG",
+                sold: false
             },
             {
                 id: 2,
                 name: "Nobody was as surprised as me",
-                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/good.JPG"
+                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/good.JPG",
+                sold: true
             },
             {
                 id: 3,
                 name: "It was a good time before all the rust",
-                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/Jeep.jpeg"
+                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/Jeep.jpeg",
+                sold: true
             },
             {
                 id: 4,
                 name: "I was going to eat the worm but now we are friends",
-                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/Iwasgoingtoeatthewormbutnowwearefriends.jpg"
+                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/Iwasgoingtoeatthewormbutnowwearefriends.jpg",
+                sold: false
             },
             {
                 id: 5,
                 name: "There was a time when I wanted to be a cowboy",
-                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/therewasatimewhenIwantedtobeacowboy(2430).jpg"
+                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/therewasatimewhenIwantedtobeacowboy(2430).jpg",
+                sold: true
             },
             {
                 id: 6,
                 name: "Python deaths seem to be on the rise",
-                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/snake+smaller+photo.jpg"
+                image: "https://gba-website-imgs.s3.amazonaws.com/clutter-chaos-confusion/snake+smaller+photo.jpg",
+                sold: false
             },
    
         ]
